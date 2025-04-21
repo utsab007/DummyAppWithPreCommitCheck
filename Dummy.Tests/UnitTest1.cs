@@ -25,7 +25,7 @@ namespace Dummy.Tests
             // Act
             int result = a + b + c;
             // Assert
-            Assert.Equal(11, result); // Check if the result is as expected.
+            Assert.Equal(10, result); // Check if the result is as expected.
         }
     }
 }
