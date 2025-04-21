@@ -7,16 +7,16 @@ namespace Dummy.API.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
+        public List<string> products = new List<string>
+        {
+            "Product 1",
+            "Product 2",
+            "Product 3"
+        };
+
         [HttpGet]
         public IActionResult GetProducts()
         {
-            var products = new List<string>
-            {
-                "Product 1",
-                "Product 2",
-                "Product 3"
-            };
-
             return Ok(products);
         }
     }
